@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas Tag</title>
+    </head>
+    <body onload = "load()">
+        <canvas id = "my_canvas"
+                     width="300px"
+                    height="300px"
+                    style="border: 2px solid black;" ></canvas>
+    </body>
+    <script>
+       function load(){
+        let my_canvas = document.getElementById("my_canvas");
+        let ctx = my_canvas.getContext("2d");
+
+
+      ctx.strokeStyle="yellow";
+      ctx.moveTo(0,0);
+      ctx.lineTo(200,100);
+      ctx.stroke();
+
+
+
+     
+      ctx.moveTo(200,0);
+      ctx.lineTo(200,100);
+      ctx.stroke();
+
+
+
+      ctx.moveTo(300,0);
+      ctx.lineTo(0,300);
+      ctx.stroke();
+
+     
+      
+      ctx.moveTo(0,0);
+      ctx.lineTo(300,300);
+      ctx.stroke();
+
+       }
+
+
+    </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CANVAS api</title>
+    </head>
+    <body onload="my_fun ()">
+        <canvas id="my_canvas"></canvas>
+    </body>
+    
+    <script>
+       function my_fun(){
+        let my_canvas = document.getElementById("my_canvas"); // in order to get the convas reference we have to use this one.
+
+
+        let ctx = my_canvas.getContext("2d"); // in order to get the 2d context we have to use this one.
+
+
+         ctx.fillRect(50,50,200,100); //onorder to get the rectangle we have to use this attributes.every attribute have 4 values.
+         ctx.clearRect(70,60,160,80);// 1)x-axis.2)y-axis.3)rectangle width.4)rectangle height.
+         ctx.strokeRect(90,70,120,60);
+
+           //fillRect-> it is used to create black colour rectangle.
+           //clearRect-> it is used to remove the black colour inside rectangle.
+           //strokeRect-> it is used to create line in the inside the rectangle.
+
+
+       }
+     
+    </script>
+   
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment on Canvas</title>
+        <style>
+            canvas
+            {
+                margin-left: 250px;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body onload="fun()">
+        
+        <canvas id="my_canvas"
+        height="450px"
+        width="600px"
+        style="border: 1px solid red;">
+        <img src="logo.png" alt=""  id="logo">
+        <img src="logo2.png" alt="" id="logo2">
+        <img src="logo3.png" alt="" id="logo3">
+    </canvas>
+    
+        
+    </body>
+    <script>
+        function fun()
+        {
+            let my_canvas = document.getElementById("my_canvas");
+            let cont = my_canvas.getContext("2d");
+           let im = document.getElementById("logo");
+           let img2 = document.getElementById("logo2");
+           let img3= document.getElementById("logo3");
+
+            cont.drawImage(im,20,50);
+            cont.drawImage(img2,100,100);
+            cont.drawImage(img3,200,200)
+            cont.strokeStyle="blue";
+            cont.moveTo(0,100);
+            cont.lineTo(100,100);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(100,100);
+            cont.lineTo(100,200);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(100,200);
+            cont.lineTo(200,200);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(200,200);
+            cont.lineTo(200,300);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(200,300);
+            cont.lineTo(300,300);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(300,300);
+            cont.lineTo(300,400);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(300,400);
+            cont.lineTo(400,400);
+            cont.stroke();
+
+            cont.strokeStyle="blue";
+            cont.moveTo(400,400);
+            cont.lineTo(400,500);
+            cont.stroke();
+            
+        }
+
+    </script>
+</html>
